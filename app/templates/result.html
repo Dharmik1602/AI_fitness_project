@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Fitness App</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background-image: url('https://img.freepik.com/free-photo/gym-accessories-empty-room_23-2151922397.jpg?t=st=1738151740~exp=1738155340~hmac=dafdaf1b9840aab699b2f64c93d030ed9eac1ae41649ba3c8ace9583891fe17a&w=1380');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        header {
+            margin-bottom: 20px;
+        }
+
+        .header-title {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #e2e2e2;
+        }
+
+        .container {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            width: 90%;
+            max-width: 500px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th,
+        td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #555;
+        }
+
+        th {
+            color: #f1f1f1;
+            text-align: left;
+        }
+
+        td {
+            color: #ddd;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 12px 20px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background 0.3s;
+        }
+
+        .button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header-title">Prediction Result</div>
+    </header>
+    <div class="container">
+        <table>
+            <tr>
+                <th>BMI</th>
+                <td>{{ bmi }}</td>
+            </tr>
+            <tr>
+                <th>BMR</th>
+                <td>{{ bmr }}</td>
+            </tr>
+            <tr>
+                <th>Daily Caloric Intake</th>
+                <td>{{ daily_caloric_intake }}</td>
+            </tr>
+            <tr>
+                <th>Time to Goal (days)</th>
+                <td>{{ time_to_goal }}</td>
+            </tr>
+            <tr>
+                <th>Recommended Caloric Intake</th>
+                <td>{{ recommended_caloric_intake }}</td>
+            </tr>
+            <tr>
+                <th>Diet Plan</th>
+                <td>{{ diet_plan }}</td>
+            </tr>
+            <tr>
+                <th>Workout Plan</th>
+                <td>{{ workout_plan }}</td>
+            </tr>
+        </table>
+        <a href="{{ url_for('index') }}" class="button">Go Back</a>
+    </div>
+</body>
+
+</html>

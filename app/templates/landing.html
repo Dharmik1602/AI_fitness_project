@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Fitness App</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background-image: url('https://img.freepik.com/free-photo/gym-accessories-empty-room_23-2151922397.jpg?t=st=1738151740~exp=1738155340~hmac=dafdaf1b9840aab699b2f64c93d030ed9eac1ae41649ba3c8ace9583891fe17a&w=1380');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        header {
+            margin-bottom: 20px;
+        }
+
+        .header-title {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #e2e2e2;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .button {
+            height: 50px;
+            width: 120%;
+            margin: 10px 0;
+            background-color: #4CAF50;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header-title">Welcome to the AI Fitness App</div>
+    </header>
+    <div class="container">
+        <button class="button" onclick="location.href='/info'">Project Information</button>
+        <button class="button" onclick="location.href='/app'">Go to Application</button>
+    </div>
+</body>
+
+</html>

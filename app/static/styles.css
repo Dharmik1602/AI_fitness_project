@@ -1,0 +1,125 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #77aaff 3px solid;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header ul {
+    padding: 0;
+    list-style: none;
+}
+
+header li {
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+.header-title {
+    text-align: center;
+    font-size: 24px;
+}
+
+table {
+    width: 100%;
+    margin: 20px 0;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+a.button {
+    display: inline-block;
+    color: #fff;
+    background: #333;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+}
+
+a.button:hover {
+    background: #555;
+}
+
+form {
+    margin: 20px 0;
+}
+
+form div {
+    margin-bottom: 15px;
+}
+
+form input, form select {
+    padding: 10px;
+    margin: 5px 0;
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form input[type="submit"] {
+    background: #333;
+    color: #fff;
+    border: 0;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+form input[type="submit"]:hover {
+    background: #555;
+}
+
+form label {
+    display: inline-block; /* Ensure the label stays on the same line as input */
+    width: 150px; /* Adjust width for consistent alignment */
+    text-align: left; /* Align text to the left */
+}
+
+form input, form select {
+    display: inline-block;
+    width: calc(100% - 160px); /* Adjust width relative to the label width */
+    margin-left: 10px; /* Add spacing between the label and input field */
+}
+
+form div {
+    display: flex; /* Use flexbox for proper alignment */
+    flex-direction: row; /* Ensure label and input are side by side */
+    align-items: center; /* Vertically align the label and input */
+    margin-bottom: 15px; /* Spacing between form rows */
+}

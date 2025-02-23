@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Fitness App</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background-image: url('https://img.freepik.com/free-photo/gym-accessories-empty-room_23-2151922397.jpg?t=st=1738151740~exp=1738155340~hmac=dafdaf1b9840aab699b2f64c93d030ed9eac1ae41649ba3c8ace9583891fe17a&w=1380');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        header {
+            margin-bottom: 20px;
+        }
+
+        .header-title {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #e2e2e2;
+        }
+
+        .container {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            width: 90%;
+            max-width: 400px;
+        }
+
+        h2 {
+            margin-bottom: 15px;
+            color: #f1f1f1;
+        }
+
+        label {
+            display: block;
+            font-size: 1rem;
+            margin-top: 10px;
+            text-align: left;
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            background-color: #333;
+            border: none;
+            border-radius: 8px;
+            color: white;
+            font-size: 1rem;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            margin-top: 15px;
+            background-color: #4CAF50;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header-title">AI Fitness App</div>
+    </header>
+    <div class="container">
+        <h2>Enter Your Details</h2>
+        <form action="/predict" method="post">
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="Age" required>
+
+            <label for="gender">Gender:</label>
+            <select id="gender" name="Gender" required>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select>
+
+            <label for="height">Height (cm):</label>
+            <input type="number" id="height" name="Height_cm" required>
+
+            <label for="weight">Weight (kg):</label>
+            <input type="number" id="weight" name="Weight_kg" required>
+
+            <label for="goal">Goal:</label>
+            <select id="goal" name="Goal" required>
+                <option value="Lose">Lose</option>
+                <option value="Gain">Gain</option>
+                <option value="Maintain">Maintain</option>
+            </select>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+
+</html>
